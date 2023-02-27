@@ -9,8 +9,42 @@
 </head>
 <body>
     <div class="main-container">
-        <video id="video" width="1920" height="1080" autoplay muted src="assets/test.mp4"></video>
-        <div id="player-bar" class="player-bar"></div>
+        <video id="video" src="assets/test.mp4"></video>
+        <div class="video-player">
+            <div id="play" class="video-player__play">
+                <img class="img" src="assets/play.svg" alt="">
+            </div>
+            
+            <div id="ff" class="video-player__ff">
+                <img class="img" src="assets/ff.png" alt="">
+            </div>
+            <div id="rewind" class="video-player__rewind">
+                <img class="img" src="assets/rewind.png" alt="">
+            </div>
+            <div id="player-bar-container" class="video-player__bar">
+                <div id="player-bar" class="player-bar"></div>
+            </div>
+            <div  class="video-player__volume">
+                <input id="volume" class="volume" type="range">
+            </div>
+            <div class="video-player__speed">
+                <div id="speed-button" class="speed">Speed        
+                </div>
+                <ul id="speed-list" class="speed__list">
+                    <li class="list__item">0.25</li>
+                    <li class="list__item">0.5</li>
+                    <li class="list__item">0.75</li>
+                    <li class="list__item">1</li>
+                    <li class="list__item">1.25</li>
+                    <li class="list__item">1.5</li>
+                    <li class="list__item">1.75</li>
+                </ul>
+            </div>
+        </div>
+          
+  
+       
+        
         
     </div>
 

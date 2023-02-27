@@ -4,12 +4,104 @@
 :root{
     --bar-width:0;
 }
+img{
+    display: block;
 
+}
+ul{
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
 video{
     max-width: 100%;
 }
+.main-container{
+   position: relative;
+
+}
+.video-player{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    bottom:0 ;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 40px;
+}
+.video-player__bar{
+    display: flex;
+    align-items: center;
+    min-width: 70%;
+    height: 10px;
+    padding: 0.2rem;
+    border-radius: 2rem;
+    background-color: gray;
+}
+.video-player__play,
+.video-player__pause,
+.video-player__ff,
+.video-player__rewind{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+   
+
+}
+
+.speed{
+    width: 80px;
+    padding: 0.2rem;
+    position: relative;
+    background-color: white;
+    
+}
+.speed:hover{
+    color: white;
+    background-color:rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+.speed--clicked{
+    color: white;
+    background-color:rgba(0, 0, 0, 0.7);
+    
+}
+.video-player__speed{
+  
+}
+.speed__list{
+    position: absolute;
+    display: none;
+    top:-270%;
+    width: 80px;
+    color: white;
+    padding: 0.4rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 1px white;
+}
+.speed__list--show{
+    display: block;
+}
+.list__item{
+    width: 100%;
+    margin-bottom: 0.2rem;
+}
+.list__item:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
 .player-bar{
+
     width: var(--bar-width);
     height: 5px;
-    background-color: red;
+    border-radius: 2rem;
+    background-color: white;
+    pointer-events: none;
 }
