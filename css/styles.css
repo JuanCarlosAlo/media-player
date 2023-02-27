@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --bar-width:0;
+}
+
+video{
+    max-width: 100%;
+}
+.player-bar{
+    width: var(--bar-width);
+    height: 5px;
+    background-color: red;
+}
