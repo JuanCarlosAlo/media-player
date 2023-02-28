@@ -7,7 +7,7 @@
 img{
     display: block;
     max-width: 100%;
-    max-height: 40px;
+   
 }
 ul{
     list-style: none;
@@ -29,16 +29,17 @@ video{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 2rem;
+    padding: 0.5rem;
     bottom:0 ;
+    height: 60px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    height: 40px;
+ 
 }
 .video-player__bar{
     display: flex;
     align-items: center;
-    min-width: 70%;
+    min-width: 60%;
     height: 10px;
     padding: 0.2rem;
     border-radius: 2rem;
@@ -52,12 +53,15 @@ video{
     align-items: center;
     width: fit-content;
     cursor: pointer;
-    width: 40px;
+    width: 30px;
+    max-height: 30px;
 
     filter: invert();
 
 }
-
+.volume{
+    accent-color: white;
+}
 .speed{
     width: 80px;
     padding: 0.2rem;
@@ -100,6 +104,9 @@ video{
     background-color: white;
     cursor: pointer;
 }
+.video-player__time{
+    color: white;
+}
 .player-bar{
 
     width: var(--bar-width);
@@ -107,4 +114,35 @@ video{
     border-radius: 2rem;
     background-color: white;
     pointer-events: none;
+}
+.video__modal{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    height: 250px;
+    width: 250px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 2px solid white;
+}
+.video__modal__img{
+    width: 250px;
+    height: 150px;
+    filter: invert(1);
+    z-index: 10;
+}
+.video__modal__text{
+    font-size: 2rem;
+    color: white;
+    z-index: 10;
+}
+.video__modal--show{
+    opacity: 1; 
+
 }

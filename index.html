@@ -10,6 +10,10 @@
 <body>
     <div class="main-container">
         <video id="video" src="assets/test.mp4"></video>
+        <div id="modal" class="video__modal">
+            <img class="video__modal__img" src="" alt="">
+            <div class="video__modal__text"></div>
+        </div>
         <div class="video-player">
             <div id="play" class="video-player__play">
                 <img class="img" src="assets/play-solid.svg" alt="">
@@ -20,6 +24,9 @@
             </div>
             <div id="rewind" class="video-player__rewind">
                 <img class="img" src="assets/backward-solid.svg" alt="">
+            </div>
+            <div id="video-time" class="video-player__time">
+                <span>00:00</span> / <span>00:00</span>
             </div>
             <div id="player-bar-container" class="video-player__bar">
                 <div id="player-bar" class="player-bar"></div>
@@ -36,13 +43,13 @@
                     <li data-speed="0.75" class="list__item">x0.75</li>
                     <li data-speed="1" class="list__item">Normal</li>
                     <li data-speed="1.25" class="list__item">x1.25</li>
-                    <li data-speed="0.50" class="list__item">x1.5</li>
+                    <li data-speed="1.50" class="list__item">x1.5</li>
                     <li data-speed="1.75" class="list__item">x1.75</li>
                 </ul>
             </div>
         </div>
           
-  
+        
        
         
         
